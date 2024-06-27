@@ -90,7 +90,7 @@ class Screen:
 
 
 class Ball:
-    def __init__(self, ):
+    def __init__(self):
         self.not_collide = True
         self.y = 5
         self.rect = pygame.Rect(445, 245, 10, 10)
@@ -147,7 +147,7 @@ class Player:
         self.speed_down = (0, 5)
         self.score = 0
 
-    def move(self, player_num: int, screen):
+    def move(self, player_num, screen):
         if player_num == 1:
             keys = pygame.key.get_pressed()
             if keys[pygame.K_w] and self.rect.top > 0:
