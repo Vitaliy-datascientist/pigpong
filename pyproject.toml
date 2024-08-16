@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "pigpong"
+version = "0.1.0"
+description = "My first game."
+authors = ["Vitaliy-datascientist <vitaliy.dayneko2410@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pygame = "^2.6.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
