@@ -17,7 +17,7 @@ GREY = (190, 190, 190)
 
 
 class Screen:
-    icon = pygame.image.load('icon.png')
+    icon = pygame.image.load('pingpong/icon.png')
     pygame.display.set_icon(icon)
     pygame.display.set_caption('Ping-Pong')
 
@@ -40,8 +40,8 @@ class Screen:
         self.text_menu4_size = FONT2.size('CUSTOM WITH BOT')
         self.text_menu5_size = FONT1.size('PING')
         self.text_menu6_size = FONT1.size('PONG')
-        self.sound_menu = pygame.mixer.Sound('sound_menu.wav')
-        self.sound_game_over = pygame.mixer.Sound('game_over_sound.wav')
+        self.sound_menu = pygame.mixer.Sound('pingpong/sound_menu.wav')
+        self.sound_game_over = pygame.mixer.Sound('pingpong/game_over_sound.wav')
 
     def menu(self):
         self.display.blit(FONT2.render('STANDARD', True, GREY), self.text_menu1_rect)
@@ -95,7 +95,7 @@ class Ball:
         self.y = 5
         self.rect = pygame.Rect(445, 245, 10, 10)
         self.speed = [random.choice([-5, 5]), 0]
-        self.sound = pygame.mixer.Sound('ball_sound.wav')
+        self.sound = pygame.mixer.Sound('pingpong/ball_sound.wav')
 
     def move(self):
         self.rect = self.rect.move(self.speed)
