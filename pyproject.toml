@@ -3,7 +3,6 @@ name = "pingpong"
 version = "0.1.0"
 description = "My first game."
 authors = ["data-tamer2410 <vitaliy.dayneko2410@gmail.com>"]
-readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
