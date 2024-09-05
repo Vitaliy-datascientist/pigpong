@@ -2,7 +2,7 @@
 name = "pigpong"
 version = "0.1.0"
 description = "My first game."
-authors = ["Vitaliy-datascientist <vitaliy.dayneko2410@gmail.com>"]
+authors = ["data-tamer2410 <vitaliy.dayneko2410@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
